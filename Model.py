@@ -202,13 +202,12 @@ class SegNet:
             out = tf.nn.bias_add(deconv, self.biases(64))
             deconv1_2 = self.relu(out, name="deconv1_2")
 
-            deconv = self.deconv_2d(deconv1_2, filter=self.filter(3, 3, 3, 64), stride=[1, 1, 1, 1])
-            out = tf.nn.bias_add(deconv, self.biases(3))
+            deconv = self.deconv_2d(deconv1_2, filter=self.filter(3, 3, 2, 64), stride=[1, 1, 1, 1])
+            out = tf.nn.bias_add(deconv, self.biases(2))
             deconv1_3 = self.relu(out, name="deconv1_3")
 
 
 
-        tf.nn.softmax(deconv1_3)
         return deconv1_3
 
 
