@@ -21,7 +21,7 @@ gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=gpu)
 session_config = tf.ConfigProto(allow_soft_placement=True, gpu_options=gpu_options)
 
 train_batch=tf.placeholder(dtype=tf.float32, shape=[batchsize, 224, 224, 3])
-labels=tf.placeholder(dtype=tf.int32,shape=[batchsize,224,224,2])
+labels=tf.placeholder(dtype=tf.int32,shape=[batchsize,224,224])
 print(train_batch.get_shape().as_list())
 
 
@@ -57,10 +57,8 @@ with tf.Session(config=session_config) as sess:
         _batch, _labels = prepare_batch(imgdir, groundtruth, batchsize)
 
         print(_batch.shape)
-        _labels=sess.run(_labels)
-        _batch=sess.run(_batch)
 
-        _labels=tf.one_hot(indices=tf.cast(_labels, tf.int32), depth=2)
+        #_temp=tf.one_hot(indices=tf.cast(_labels, tf.int32), depth=2)
         _,loss=sess.run([train_step,loss_op], feed_dict={train_batch:_batch, labels:_labels})
 
 
