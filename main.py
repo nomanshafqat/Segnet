@@ -8,10 +8,10 @@ batchsize=4
 imgdir="DS"
 groundtruth="GT"
 total_steps=10000
-ckpt_dir="ckpt"
-ckpt_steps=2
+ckpt_dir="ckpt/"
+ckpt_steps=200
 load=-1
-gpu=1.0
+gpu=0.5
 lr=1e-04
 
 #tensor_in=tf.constant(1.0,shape=[batchsize,224,224,1],dtype=tf.float32)
@@ -57,9 +57,11 @@ with tf.Session(config=session_config) as sess:
         _batch, _labels = prepare_batch(imgdir, groundtruth, batchsize)
 
         print(_batch.shape)
+        _labels=sess.run(_labels)
+        _batch=sess.run(_batch)
 
         _labels=tf.one_hot(indices=tf.cast(_labels, tf.int32), depth=2)
-        _,loss=sess.run([train_step,loss_op], feed_dict={train_batch:sess.run(_batch), labels:sess.run(_labels)})
+        _,loss=sess.run([train_step,loss_op], feed_dict={train_batch:_batch, labels:_labels})
 
 
         print("step", i, "Loss=",loss)
