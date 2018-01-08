@@ -53,7 +53,7 @@ def parse(img_dir, ground_truth_dir,batch_size):
 
             dataset.append(g)
             labels.append(thresh1)
-            print(filename[:2] , angle,end=" && ")
+            #print(filename[:2] , angle,end=" && ")
 
             #cv2.imshow("g", g)
             #cv2.imshow("gt", thresh1*255)

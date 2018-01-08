@@ -4,6 +4,7 @@ from dataset import parse,prepare_batch
 from loss import loss
 import numpy as np
 import cv2
+import sys
 def accuracy(sess,logits, labels):
     softmax = tf.nn.softmax(logits)
     argmax = tf.argmax(softmax, 3)
@@ -42,12 +43,10 @@ def accuracy(sess,logits, labels):
     #return equal_pixels / total_pixels
     return 5
 
-def test():
+def test(load,ckpt_dir):
     batchsize = 4
-    imgdir = "/Users/nomanshafqat/Desktop/DIP/IMAGES/DRIVE"
+    imgdir = "DS"
     groundtruth = "GT"
-    ckpt_dir = "/Users/nomanshafqat/Desktop/DIP/ckpt/"
-    load = 280
 
     segnet = SegNet(batchsize)
 
@@ -80,6 +79,12 @@ def test():
 
 
 
+load=int(sys.argv[1])
+ckpt_dir=sys.argv[2]
+
+print("loading", load)
+print("loadingdir", ckpt_dir)
 
 
-test()
+test(load,ckpt_dir)
+
