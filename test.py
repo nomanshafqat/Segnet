@@ -5,8 +5,10 @@ from loss import loss
 import numpy as np
 import cv2
 import sys
-def accuracy(sess,logits, labels):
-    softmax = tf.nn.softmax(logits)
+import os
+def accuracy(sess,logits,_batch ,labels):
+
+    softmax = tf.nn.softmax(logits,feed_dict={train_batch: _batch.astype(np.float32), labels: _labels})
     argmax = tf.argmax(softmax, 3)
 
     print(sess.run(argmax))
@@ -47,18 +49,25 @@ def test(load,ckpt_dir):
     batchsize = 4
     imgdir = "DS"
     groundtruth = "GT"
-
+    gpu=0.5
     segnet = SegNet(batchsize)
 
-    gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0)
+    gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=gpu)
     session_config = tf.ConfigProto(allow_soft_placement=True, gpu_options=gpu_options)
 
-    batch, labels = prepare_batch(imgdir, groundtruth, batchsize)
-    # onehot_labels = tf.one_hot(indices=tf.cast(labels, tf.int32), depth=1)
-    onehot_labels = labels
+    train_batch = tf.placeholder(dtype=tf.float32, shape=[batchsize, 224, 224, 3])
+    labels = tf.placeholder(dtype=tf.int32, shape=[batchsize, 224, 224])
+    print(train_batch.get_shape().as_list())
 
-    logits = segnet.inference(batch)
-    print(onehot_labels.get_shape().as_list())
+    # labels=tf.one_hot(labels,2)
+
+    logits = segnet.inference(train_batch)
+
+    softmax = tf.nn.softmax(logits)
+
+    print("logits=", logits.get_shape().as_list())
+    print("labels=", labels.get_shape().as_list())
+
 
     init = tf.global_variables_initializer()
 
@@ -66,13 +75,28 @@ def test(load,ckpt_dir):
 
     with tf.Session(config=session_config) as sess:
         sess.run(init)
+
+
         start = 0
         if load > 0:
             print("Restoring", load, ".ckpt.....")
-            saver.restore(sess, ckpt_dir + str(load) + ".ckpt")
+            saver.restore(sess, os.path.join(ckpt_dir,str(load)))
             start = load
 
-        accuracy(sess,logits,labels)
+        _batch, _labels = prepare_batch(imgdir, groundtruth, batchsize)
+
+        print(_batch.shape)
+
+        # _temp=tf.one_hot(indices=tf.cast(_labels, tf.int32), depth=2)
+        #sess.run(logits, feed_dict={train_batch: _batch.astype(np.float32), labels: _labels})
+        softmax=sess.run([softmax],feed_dict={train_batch: _batch.astype(np.float32), labels: _labels})
+
+        #argmax = tf.argmax(softmax, 3)
+
+        print(softmax)
+        print("softmax=", np.array(softmax).shape)
+
+        #accuracy(sess,logits,_batch,labels)
 
         #accuracy()
 

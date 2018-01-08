@@ -8,9 +8,9 @@ import os
 batchsize=4
 imgdir="DS"
 groundtruth="GT"
-total_steps=10000
+total_steps=1000000
 ckpt_dir="ckpt/"
-ckpt_steps=200
+ckpt_steps=2
 load=-1
 gpu=0.5
 lr=1e-04
