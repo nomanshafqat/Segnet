@@ -19,7 +19,7 @@ class SegNet:
         temp2=filter.get_shape().as_list()
         #print(temp)
 
-        return tf.nn.conv2d_transpose(X, filter=filter, strides=stride,output_shape=[batch,h,w,temp2[2]],padding="SAME", name=name)
+        return  tf.nn.conv2d_transpose(X, filter=filter, strides=stride,output_shape=[batch,h,w,temp2[2]],padding="SAME", name=name)
 
 
     def max_pool(self, X,name="max_pool"):
@@ -47,7 +47,7 @@ class SegNet:
                                                stddev=1e-1), name='weights')
 
     def biases(self, shape,name='biases'):
-        return tf.Variable(tf.constant(0.0001, shape=[shape], dtype=tf.float32),
+        return tf.Variable(tf.constant(0.01, shape=[shape], dtype=tf.float32),
                            trainable=True, name=name)
 
     def inference(self, images):
