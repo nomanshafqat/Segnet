@@ -66,7 +66,7 @@ with tf.Session(config=session_config) as sess:
     start=0
     if load > 0:
         print("Restoring", load ,".ckpt.....")
-        saver.restore(sess, ckpt_dir+str(load)+".ckpt")
+        saver.restore(sess, os.path.join(ckpt_dir,str(load)))
         start=load
 
     for i in range(start,total_steps):
@@ -85,7 +85,7 @@ with tf.Session(config=session_config) as sess:
         if i % ckpt_steps==0 and i!=start:
             print("saving checkpoint ",str(i) ,".ckpt.....")
 
-            save_path = saver.save(sess, os.path.join(ckpt_dir,str(i)+".ckpt"))
+            save_path = saver.save(sess, os.path.join(ckpt_dir,str(i)))
 
 
 
