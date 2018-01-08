@@ -6,38 +6,35 @@ import numpy as np
 import cv2
 import sys
 import os
-def accuracy(sess,logits,_batch ,labels):
-
-    softmax = tf.nn.softmax(logits,feed_dict={train_batch: _batch.astype(np.float32), labels: _labels})
-    argmax = tf.argmax(softmax, 3)
-
-    print(sess.run(argmax))
-    shape = logits.get_shape().as_list()
-    n = shape[3]
-    pred=sess.run(argmax)
-    pred=np.array(pred)
+def accuracy(results ,labels):
 
 
+    results=np.array(results)
+    shape=results.shape
 
-    results=tf.subtract(labels,pred)
 
-    incoorect=sess.run(tf.count_nonzero(results))
+    subtrac=np.subtract(results,labels)
+
+
+    print(results)
+    print(labels)
+
+    incoorect=np.count_nonzero(subtrac)
     total=shape[0]*shape[1]*shape[2]
 
-    print(np.count_nonzero(pred))
     print(incoorect)
 
 
     print("error %",100*incoorect/total)
-    print(pred[0]*255)
+    print(results[0]*255)
 
-    out=cv2.multiply(pred[0],255)
+    out=cv2.multiply(results[0],255)
     out=np.array(out).astype("uint8")
-    cv2.imshow("result",out)
-    cv2.imshow("original",np.array(sess.run(labels[0])).astype("uint8")*255)
+    cv2.imwrite("result.png",out)
+    cv2.imwrite("original.png",np.array(labels[0]).astype("uint8")*255)
 
 
-    cv2.waitKey(0)
+    #cv2.waitKey(0)
     #cv2.destroyAllWindows()
     #one_hot = tf.one_hot(argmax, n, dtype=tf.float32)
     #equal_pixels = tf.reduce_sum())
@@ -89,14 +86,14 @@ def test(load,ckpt_dir):
 
         # _temp=tf.one_hot(indices=tf.cast(_labels, tf.int32), depth=2)
         #sess.run(logits, feed_dict={train_batch: _batch.astype(np.float32), labels: _labels})
-        softmax=sess.run([softmax],feed_dict={train_batch: _batch.astype(np.float32), labels: _labels})
+        softmax=sess.run(softmax,feed_dict={train_batch: _batch.astype(np.float32), labels: _labels})
 
-        #argmax = tf.argmax(softmax, 3)
+        argmax = tf.argmax(softmax, 3)
+        results=np.array(sess.run(argmax))
+        print(results)
+        print("softmax=", np.array(results).shape)
 
-        print(softmax)
-        print("softmax=", np.array(softmax).shape)
-
-        #accuracy(sess,logits,_batch,labels)
+        accuracy(results,_labels)
 
         #accuracy()
 
