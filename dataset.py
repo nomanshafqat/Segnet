@@ -30,12 +30,12 @@ def parse(img_dir, ground_truth_dir,batch_size):
 
             path = os.path.join(img_dir, filename)
             g = cv2.imread(path)
-            #g = cv2.resize(g, (224, 224))
+            g = cv2.resize(g, (400, 400))
             #g=cv2.divide(g,255)
             groundtruthpath = os.path.join(ground_truth_dir, filename[:-4] + ".png")
 
             gt = cv2.imread(groundtruthpath, 0)
-            #gt = cv2.resize(gt, (224, 224))
+            gt = cv2.resize(gt, (400, 400))
 
             ret, thresh1 = cv2.threshold(gt, 100, 255, cv2.THRESH_BINARY)
 

@@ -28,11 +28,18 @@ def accuracy(results ,labels):
     print("error %",100*incoorect/total)
     print(results[0]*255)
 
-    out=cv2.multiply(results[0],255)
-    out=np.array(out).astype("uint8")
-    cv2.imwrite("result.png",out)
+
+    cv2.imwrite("result.png",np.array(results[0]).astype("uint8")*255)
     cv2.imwrite("original.png",np.array(labels[0]).astype("uint8")*255)
 
+    cv2.imwrite("result1.png", np.array(results[1]).astype("uint8") * 255)
+    cv2.imwrite("original1.png", np.array(labels[1]).astype("uint8") * 255)
+
+    cv2.imwrite("result2.png", np.array(results[2]).astype("uint8") * 255)
+    cv2.imwrite("original2.png", np.array(labels[2]).astype("uint8") * 255)
+
+    cv2.imwrite("result3.png", np.array(results[2]).astype("uint8") * 255)
+    cv2.imwrite("original3.png", np.array(labels[2]).astype("uint8") * 255)
 
     #cv2.waitKey(0)
     #cv2.destroyAllWindows()

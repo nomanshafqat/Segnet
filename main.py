@@ -45,14 +45,16 @@ labels=tf.placeholder(dtype=tf.int32,shape=[batchsize,224,224])
 print(train_batch.get_shape().as_list())
 
 
-#labels=tf.one_hot(labels,2)
+
+onehot=tf.one_hot(labels,2)
 
 logits = segnet.inference(train_batch)
 
 print("logits=",logits.get_shape().as_list())
 print("labels=",labels.get_shape().as_list())
 
-loss_op = loss(logits, labels)
+
+loss_op = loss(logits, onehot)
 
 
 optimizer = tf.train.AdamOptimizer(lr)
@@ -78,7 +80,6 @@ with tf.Session(config=session_config) as sess:
 
         #print(_batch.shape)
 
-        #_temp=tf.one_hot(indices=tf.cast(_labels, tf.int32), depth=2)
         _,loss=sess.run([train_step,loss_op], feed_dict={train_batch:_batch, labels:_labels})
 
 
