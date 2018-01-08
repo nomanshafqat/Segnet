@@ -3,6 +3,7 @@ from dataset import parse,prepare_batch
 import tensorflow as tf
 from loss import loss
 import numpy as np
+
 batchsize=4
 imgdir="DS"
 groundtruth="GT"
@@ -11,6 +12,7 @@ ckpt_dir="ckpt"
 ckpt_steps=2
 load=-1
 gpu=1.0
+lr=1e-04
 
 #tensor_in=tf.constant(1.0,shape=[batchsize,224,224,1],dtype=tf.float32)
 segnet=SegNet(batchsize)
@@ -33,7 +35,7 @@ print("labels=",labels.get_shape().as_list())
 loss_op = loss(logits, labels)
 
 
-optimizer = tf.train.AdamOptimizer(1e-04)
+optimizer = tf.train.AdamOptimizer(lr)
 train_step = optimizer.minimize(loss_op)
 
 init = tf.global_variables_initializer()
