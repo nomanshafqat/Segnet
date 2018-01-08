@@ -46,7 +46,7 @@ def test(load,ckpt_dir):
     batchsize = 4
     imgdir = "DS"
     groundtruth = "GT"
-    gpu=0.5
+    gpu=0.3
     segnet = SegNet(batchsize)
 
     gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=gpu)
