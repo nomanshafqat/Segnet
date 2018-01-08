@@ -16,16 +16,34 @@ def accuracy(results ,labels):
     subtrac=np.subtract(results,labels)
 
 
-    print(results)
-    print(labels)
+    #print(results)
+    #print(labels)
 
     incoorect=np.count_nonzero(subtrac)
+    undetected=len(np.where(subtrac==1)[0])
+    false=len(np.where(subtrac==-1)[0])
+    correct=len(np.where(subtrac==0)[0])
+
     total=shape[0]*shape[1]*shape[2]
 
-    print(incoorect)
+    precision=correct/(correct+false)
+    recall=correct/(undetected+correct)
+    map=(correct ) /  (correct+ false + undetected)
 
 
-    print("error %",100*incoorect/total)
+    print("undetected:",undetected)
+    print("false:",false)
+    print("correct:",correct)
+    print("total:",total)
+
+    print("precision",precision)
+    print("recall",recall)
+    print("maP",map*100)
+
+    total=shape[0]*shape[1]*shape[2]
+
+
+    print("error (%):",(1-map)*100)
     print(results[0]*255)
 
 
