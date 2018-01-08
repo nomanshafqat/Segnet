@@ -29,26 +29,34 @@ def parse(img_dir, ground_truth_dir,batch_size):
                 continue
 
             path = os.path.join(img_dir, filename)
-            bgr = cv2.imread(path)
-            g = cv2.resize(bgr, (224, 224))
+            g = cv2.imread(path)
+            #g = cv2.resize(g, (224, 224))
             #g=cv2.divide(g,255)
             groundtruthpath = os.path.join(ground_truth_dir, filename[:-4] + ".png")
 
             gt = cv2.imread(groundtruthpath, 0)
-            gt = cv2.resize(gt, (224, 224))
+            #gt = cv2.resize(gt, (224, 224))
 
             ret, thresh1 = cv2.threshold(gt, 100, 255, cv2.THRESH_BINARY)
 
             thresh1[thresh1>1]=1
 
+            #tf.random_crop(g,[224,224,3],tf.set_random_seed(random.randint(0,99999)))
+            #angle=random.randint(0,360)
+            #g=Image.fromarray(g).rotate(angle)
+            #thresh1=Image.fromarray(thresh1).rotate(angle)
 
-
-            angle=random.randint(0,360)
-
-            g=Image.fromarray(g).rotate(angle)
-            thresh1=Image.fromarray(thresh1).rotate(angle)
             g=np.array(g)
             thresh1=np.array(thresh1)
+
+            h=g.shape[0]-224
+            w=g.shape[1]-224
+            #print(h,w,g.shape)
+            hoff=random.randint(0,h)
+            woff=random.randint(0,w)
+
+            g=g[hoff:hoff+224,woff:woff+224,:]
+            thresh1=thresh1[hoff:hoff+224,woff:woff+224]
 
 
             dataset.append(g)

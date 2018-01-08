@@ -76,7 +76,7 @@ def test(load,ckpt_dir):
 
         start = 0
         if load > 0:
-            print("Restoring", load, ".ckpt.....")
+            print("Restoring", load, ".")
             saver.restore(sess, os.path.join(ckpt_dir,str(load)))
             start = load
 

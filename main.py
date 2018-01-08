@@ -17,6 +17,8 @@ lr=1e-04
 
 print("--loadfrom;",sys.argv[1]," --ckptdir;",sys.argv[2]," --gpu",sys.argv[3]," --lr", sys.argv[4],"save",sys.argv[5])
 
+# python main.py -1 ckpt 0.5 1e-4 100
+
 
 
 load=int(sys.argv[1])
