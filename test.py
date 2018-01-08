@@ -29,17 +29,17 @@ def accuracy(results ,labels):
     print(results[0]*255)
 
 
-    cv2.imwrite("result.png",np.array(results[0]).astype("uint8")*255)
-    cv2.imwrite("original.png",np.array(labels[0]).astype("uint8")*255)
+    cv2.imwrite("results/result.png",np.array(results[0]).astype("uint8")*255)
+    cv2.imwrite("results/original.png",np.array(labels[0]).astype("uint8")*255)
 
-    cv2.imwrite("result1.png", np.array(results[1]).astype("uint8") * 255)
-    cv2.imwrite("original1.png", np.array(labels[1]).astype("uint8") * 255)
+    cv2.imwrite("results/result1.png", np.array(results[1]).astype("uint8") * 255)
+    cv2.imwrite("results/original1.png", np.array(labels[1]).astype("uint8") * 255)
 
-    cv2.imwrite("result2.png", np.array(results[2]).astype("uint8") * 255)
-    cv2.imwrite("original2.png", np.array(labels[2]).astype("uint8") * 255)
+    cv2.imwrite("results/result2.png", np.array(results[2]).astype("uint8") * 255)
+    cv2.imwrite("results/original2.png", np.array(labels[2]).astype("uint8") * 255)
 
-    cv2.imwrite("result3.png", np.array(results[2]).astype("uint8") * 255)
-    cv2.imwrite("original3.png", np.array(labels[2]).astype("uint8") * 255)
+    cv2.imwrite("results/result3.png", np.array(results[2]).astype("uint8") * 255)
+    cv2.imwrite("results/original3.png", np.array(labels[2]).astype("uint8") * 255)
 
     #cv2.waitKey(0)
     #cv2.destroyAllWindows()
@@ -51,8 +51,8 @@ def accuracy(results ,labels):
 
 def test(load,ckpt_dir):
     batchsize = 4
-    imgdir = "DS"
-    groundtruth = "GT"
+    imgdir = "DSV"
+    groundtruth = "GTV"
     gpu=0.3
     segnet = SegNet(batchsize)
 
