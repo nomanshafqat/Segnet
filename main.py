@@ -20,7 +20,6 @@ print("--loadfrom;",sys.argv[1]," --ckptdir;",sys.argv[2]," --gpu",sys.argv[3],"
 # python main.py -1 ckpt 0.5 1e-4 100
 
 
-
 load=int(sys.argv[1])
 ckpt_dir=sys.argv[2]
 gpu=float(sys.argv[3])
