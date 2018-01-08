@@ -42,9 +42,9 @@ def parse(img_dir, ground_truth_dir,batch_size):
             thresh1[thresh1>1]=1
 
             #tf.random_crop(g,[224,224,3],tf.set_random_seed(random.randint(0,99999)))
-            #angle=random.randint(0,360)
-            #g=Image.fromarray(g).rotate(angle)
-            #thresh1=Image.fromarray(thresh1).rotate(angle)
+            angle=random.randint(0,360)
+            g=Image.fromarray(g).rotate(angle)
+            thresh1=Image.fromarray(thresh1).rotate(angle)
 
             g=np.array(g)
             thresh1=np.array(thresh1)
@@ -57,16 +57,21 @@ def parse(img_dir, ground_truth_dir,batch_size):
 
             g=g[hoff:hoff+224,woff:woff+224,:]
             thresh1=thresh1[hoff:hoff+224,woff:woff+224]
+            for angle in range(0,360,90):
+                g = Image.fromarray(g).rotate(angle)
+                thresh1 = Image.fromarray(thresh1).rotate(angle)
 
+                g = np.array(g)
+                thresh1 = np.array(thresh1)
 
-            dataset.append(g)
-            labels.append(thresh1)
-            #print(filename[:2] , angle,end=" && ")
+                dataset.append(g)
+                labels.append(thresh1)
+                print(filename[:2] , angle,end=" && ")
 
-            #cv2.imshow("g", g)
-            #cv2.imshow("gt", thresh1*255)
-            #cv2.waitKey(1000)
-            if(len(dataset)==batch_size):
-                yield dataset,labels
-                dataset=[]
-                labels=[]
+                #cv2.imshow("g", g)
+                #cv2.imshow("gt", thresh1*255)
+                #cv2.waitKey(1000)
+                if(len(dataset)==batch_size):
+                    yield dataset,labels
+                    dataset=[]
+                    labels=[]
