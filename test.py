@@ -1,5 +1,5 @@
 import tensorflow as tf
-from Model import SegNet
+from Model2 import SegNet
 from dataset import parse,prepare_batch
 from loss import loss
 import numpy as np
