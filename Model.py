@@ -208,6 +208,7 @@ class SegNet:
 
 
 
+        tf.nn.softmax(deconv1_3)
         return deconv1_3
 
 

@@ -32,7 +32,7 @@ def parse(img_dir, ground_truth_dir,batch_size):
             bgr = cv2.imread(path)
             g = cv2.resize(bgr, (224, 224))
             #g=cv2.divide(g,255)
-            groundtruthpath = os.path.join(ground_truth_dir, filename[:2] + ".png")
+            groundtruthpath = os.path.join(ground_truth_dir, filename[:-4] + ".png")
 
             gt = cv2.imread(groundtruthpath, 0)
             gt = cv2.resize(gt, (224, 224))

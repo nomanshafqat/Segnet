@@ -47,7 +47,7 @@ def test():
     imgdir = "/Users/nomanshafqat/Desktop/DIP/IMAGES/DRIVE"
     groundtruth = "GT"
     ckpt_dir = "/Users/nomanshafqat/Desktop/DIP/ckpt/"
-    load = 140
+    load = 280
 
     segnet = SegNet(batchsize)
 

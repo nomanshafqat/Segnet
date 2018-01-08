@@ -4,27 +4,34 @@ import tensorflow as tf
 from loss import loss
 import numpy as np
 batchsize=4
-imgdir="/Users/nomanshafqat/Desktop/DIP/IMAGES/DRIVE"
+imgdir="DS"
 groundtruth="GT"
 total_steps=10000
-ckpt_dir="/Users/nomanshafqat/Desktop/DIP/ckpt/"
-ckpt_steps=20
-load=140
+ckpt_dir="ckpt"
+ckpt_steps=2
+load=-1
+gpu=1.0
 
 #tensor_in=tf.constant(1.0,shape=[batchsize,224,224,1],dtype=tf.float32)
 segnet=SegNet(batchsize)
 
-gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0)
+gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=gpu)
 session_config = tf.ConfigProto(allow_soft_placement=True, gpu_options=gpu_options)
 
 train_batch=tf.placeholder(dtype=tf.float32, shape=[batchsize, 224, 224, 3])
-labels=tf.placeholder(dtype=tf.int32,shape=[batchsize,224,224])
+labels=tf.placeholder(dtype=tf.int32,shape=[batchsize,224,224,2])
 print(train_batch.get_shape().as_list())
 
-#onehot_labels = tf.one_hot(indices=tf.cast(labels, tf.int32), depth=1)
+
+#labels=tf.one_hot(labels,2)
 
 logits = segnet.inference(train_batch)
+
+print("logits=",logits.get_shape().as_list())
+print("labels=",labels.get_shape().as_list())
+
 loss_op = loss(logits, labels)
+
 
 optimizer = tf.train.AdamOptimizer(1e-04)
 train_step = optimizer.minimize(loss_op)
@@ -49,7 +56,7 @@ with tf.Session(config=session_config) as sess:
 
         print(_batch.shape)
 
-
+        _labels=tf.one_hot(indices=tf.cast(_labels, tf.int32), depth=2)
         _,loss=sess.run([train_step,loss_op], feed_dict={train_batch:sess.run(_batch), labels:sess.run(_labels)})
 
 
