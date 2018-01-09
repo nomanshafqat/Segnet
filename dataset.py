@@ -33,12 +33,12 @@ def parse(img_dir, ground_truth_dir,batch_size):
             inputwidth=512
             path = os.path.join(img_dir, filename)
             g = cv2.imread(path)
-            #g = cv2.resize(g, (300, 300))
+            g = cv2.resize(g, (700, 700))
             #g=cv2.divide(g,255)
             groundtruthpath = os.path.join(ground_truth_dir, filename[:-4] + ".png")
 
             gt = cv2.imread(groundtruthpath, 0)
-            #gt = cv2.resize(gt, (300, 300))
+            gt = cv2.resize(gt, (700, 700))
 
             ret, thresh1 = cv2.threshold(gt, 100, 255, cv2.THRESH_BINARY)
             #square=cv2.getStructuringElement(cv2.MORPH_RECT,(2,2))
