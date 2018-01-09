@@ -77,8 +77,8 @@ def test(load,ckpt_dir):
     gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=gpu)
     session_config = tf.ConfigProto(allow_soft_placement=True, gpu_options=gpu_options)
 
-    train_batch = tf.placeholder(dtype=tf.float32, shape=[batchsize, 224, 224, 3])
-    labels = tf.placeholder(dtype=tf.int32, shape=[batchsize, 224, 224])
+    train_batch = tf.placeholder(dtype=tf.float32, shape=[batchsize, 512, 512, 3])
+    labels = tf.placeholder(dtype=tf.int32, shape=[batchsize, 512, 512])
     print(train_batch.get_shape().as_list())
 
     # labels=tf.one_hot(labels,2)

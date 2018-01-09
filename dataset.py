@@ -41,14 +41,14 @@ def parse(img_dir, ground_truth_dir,batch_size):
             #gt = cv2.resize(gt, (300, 300))
 
             ret, thresh1 = cv2.threshold(gt, 100, 255, cv2.THRESH_BINARY)
-            square=cv2.getStructuringElement(cv2.MORPH_RECT,(2,2))
-            thresh1=morphology.dilation(thresh1,square)
+            #square=cv2.getStructuringElement(cv2.MORPH_RECT,(2,2))
+            #thresh1=morphology.dilation(thresh1,square)
             thresh1[thresh1>1]=1
 
             #tf.random_crop(g,[224,224,3],tf.set_random_seed(random.randint(0,99999)))
-            angle=random.randint(0,360)
-            g=Image.fromarray(g).rotate(angle)
-            thresh1=Image.fromarray(thresh1).rotate(angle)
+            #angle=random.randint(0,360)
+            #g=Image.fromarray(g).rotate(angle)
+            #thresh1=Image.fromarray(thresh1).rotate(angle)
 
             g=np.array(g)
             thresh1=np.array(thresh1)
@@ -72,9 +72,9 @@ def parse(img_dir, ground_truth_dir,batch_size):
                 labels.append(thresh1)
                 print(filename[:2] , angle,end=" && ")
 
-                #cv2.imshow("g", g)
-                #cv2.imshow("gt", thresh1*255)
-                #cv2.waitKey(1000)
+                cv2.imshow("g", g)
+                cv2.imshow("gt", thresh1*255)
+                cv2.waitKey(1000)
                 if(len(dataset)==batch_size):
                     yield dataset,labels
                     dataset=[]
