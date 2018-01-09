@@ -5,6 +5,7 @@ import random
 import tensorflow as tf
 import random
 from PIL import Image
+from skimage import morphology
 def prepare_batch(img_dir, ground_truth_dir,batch_size):
     batch =parse(img_dir, ground_truth_dir, batch_size)
     for image,labels in  batch:
@@ -38,7 +39,8 @@ def parse(img_dir, ground_truth_dir,batch_size):
             gt = cv2.resize(gt, (300, 300))
 
             ret, thresh1 = cv2.threshold(gt, 100, 255, cv2.THRESH_BINARY)
-
+            square=cv2.getStructuringElement(cv2.MORPH_RECT,(2,2))
+            thresh1=morphology.dilation(thresh1,square)
             thresh1[thresh1>1]=1
 
             #tf.random_crop(g,[224,224,3],tf.set_random_seed(random.randint(0,99999)))

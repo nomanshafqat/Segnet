@@ -20,8 +20,8 @@ def accuracy(results ,labels):
     #print(labels)
 
     incoorect=np.count_nonzero(subtrac)
-    undetected=len(np.where(subtrac==1)[0])
-    false=len(np.where(subtrac==-1)[0])
+    undetected=len(np.where(subtrac==-1)[0])
+    false=len(np.where(subtrac==1)[0])
     correct=len(np.where(subtrac==0)[0])
 
     total=shape[0]*shape[1]*shape[2]
