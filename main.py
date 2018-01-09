@@ -25,7 +25,7 @@ ckpt_dir=sys.argv[2]
 gpu=float(sys.argv[3])
 lr=float(sys.argv[4])
 ckpt_steps=int(sys.argv[5])
-
+batchsize=int(sys.argv[6])
 
 assert (os.path.exists(ckpt_dir))
 assert (os.path.exists(imgdir))
