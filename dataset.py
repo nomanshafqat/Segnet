@@ -72,9 +72,9 @@ def parse(img_dir, ground_truth_dir,batch_size):
                 labels.append(thresh1)
                 print(filename[:2] , angle,end=" && ")
 
-                cv2.imshow("g", g)
-                cv2.imshow("gt", thresh1*255)
-                cv2.waitKey(1000)
+                #cv2.imshow("g", g)
+                #cv2.imshow("gt", thresh1*255)
+                #cv2.waitKey(1000)
                 if(len(dataset)==batch_size):
                     yield dataset,labels
                     dataset=[]
