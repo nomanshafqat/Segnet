@@ -7,11 +7,12 @@ import random
 from PIL import Image
 from skimage import morphology
 def prepare_batch(img_dir, ground_truth_dir,batch_size):
+
     batch =parse(img_dir, ground_truth_dir, batch_size)
     for image,labels in  batch:
         #print(np.array(image).shape)
-        img=np.array(image).reshape(batch_size,224,224,3)
-        lbel=np.array(labels).reshape(batch_size,224,224)
+        img=np.array(image).reshape(batch_size,512,512,3)
+        lbel=np.array(labels).reshape(batch_size,512,512)
         return img,lbel
 
 def parse(img_dir, ground_truth_dir,batch_size):
@@ -21,6 +22,7 @@ def parse(img_dir, ground_truth_dir,batch_size):
 
 
     while True:
+
         dataset = []
         labels = []
         random.shuffle(img)
@@ -28,15 +30,15 @@ def parse(img_dir, ground_truth_dir,batch_size):
 
             if filename.__contains__("DS_Store"):
                 continue
-
+            inputwidth=512
             path = os.path.join(img_dir, filename)
             g = cv2.imread(path)
-            g = cv2.resize(g, (300, 300))
+            #g = cv2.resize(g, (300, 300))
             #g=cv2.divide(g,255)
             groundtruthpath = os.path.join(ground_truth_dir, filename[:-4] + ".png")
 
             gt = cv2.imread(groundtruthpath, 0)
-            gt = cv2.resize(gt, (300, 300))
+            #gt = cv2.resize(gt, (300, 300))
 
             ret, thresh1 = cv2.threshold(gt, 100, 255, cv2.THRESH_BINARY)
             square=cv2.getStructuringElement(cv2.MORPH_RECT,(2,2))
@@ -51,14 +53,14 @@ def parse(img_dir, ground_truth_dir,batch_size):
             g=np.array(g)
             thresh1=np.array(thresh1)
 
-            h=g.shape[0]-224
-            w=g.shape[1]-224
+            h=g.shape[0]-inputwidth
+            w=g.shape[1]-inputwidth
             #print(h,w,g.shape)
             hoff=random.randint(0,h)
             woff=random.randint(0,w)
 
-            g=g[hoff:hoff+224,woff:woff+224,:]
-            thresh1=thresh1[hoff:hoff+224,woff:woff+224]
+            g=g[hoff:hoff+inputwidth,woff:woff+inputwidth,:]
+            thresh1=thresh1[hoff:hoff+inputwidth,woff:woff+inputwidth]
             for angle in range(0,360,90):
                 g = Image.fromarray(g).rotate(angle)
                 thresh1 = Image.fromarray(thresh1).rotate(angle)
