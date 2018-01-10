@@ -6,7 +6,7 @@ import numpy as np
 import cv2
 import sys
 import os
-def accuracy(results ,labels):
+def accuracy(results ,labels,filename):
 
 
     results=np.array(results)
@@ -47,17 +47,10 @@ def accuracy(results ,labels):
     print(results[0]*255)
 
 
-    cv2.imwrite("results/result.png",np.array(results[0]).astype("uint8")*255)
-    cv2.imwrite("results/original.png",np.array(labels[0]).astype("uint8")*255)
+    cv2.imwrite("results/re_"+filename,np.array(results[0]).astype("uint8")*255)
+    cv2.imwrite("results/gt_"+filename,np.array(labels[0]).astype("uint8")*255)
 
-    cv2.imwrite("results/result1.png", np.array(results[1]).astype("uint8") * 255)
-    cv2.imwrite("results/original1.png", np.array(labels[1]).astype("uint8") * 255)
 
-    cv2.imwrite("results/result2.png", np.array(results[2]).astype("uint8") * 255)
-    cv2.imwrite("results/original2.png", np.array(labels[2]).astype("uint8") * 255)
-
-    cv2.imwrite("results/result3.png", np.array(results[2]).astype("uint8") * 255)
-    cv2.imwrite("results/original3.png", np.array(labels[2]).astype("uint8") * 255)
 
     #cv2.waitKey(0)
     #cv2.destroyAllWindows()
@@ -68,7 +61,7 @@ def accuracy(results ,labels):
     return 5
 
 def test(load,ckpt_dir):
-    batchsize = 4
+    batchsize = 1
     imgdir = "DSV"
     groundtruth = "GTV"
     gpu=0.3
@@ -105,20 +98,40 @@ def test(load,ckpt_dir):
             saver.restore(sess, os.path.join(ckpt_dir,str(load)))
             start = load
 
-        _batch, _labels = prepare_batch(imgdir, groundtruth, batchsize)
+        img = os.listdir(imgdir)
+        for filename in img:
 
-        print(_batch.shape)
+            if filename.__contains__("DS_Store"):
+                continue
+            inputwidth = 512
+            path = os.path.join(imgdir, filename)
+            g = cv2.imread(path)
+            g = cv2.resize(g, (512, 512))
 
-        # _temp=tf.one_hot(indices=tf.cast(_labels, tf.int32), depth=2)
-        #sess.run(logits, feed_dict={train_batch: _batch.astype(np.float32), labels: _labels})
-        softmax=sess.run(softmax,feed_dict={train_batch: _batch.astype(np.float32), labels: _labels})
+            groundtruthpath = os.path.join(groundtruth, filename[:-4] + ".png")
 
-        argmax = tf.argmax(softmax, 3)
-        results=np.array(sess.run(argmax))
-        print(results)
-        print("softmax=", np.array(results).shape)
+            gt = cv2.imread(groundtruthpath, 0)
+            gt = cv2.resize(gt, (512, 512))
 
-        accuracy(results,_labels)
+            ret, thresh1 = cv2.threshold(gt, 100, 255, cv2.THRESH_BINARY)
+            # square=cv2.getStructuringElement(cv2.MORPH_RECT,(2,2))
+            # thresh1=morphology.dilation(thresh1,square)
+            thresh1[thresh1 > 1] = 1
+            _batch=np.array([g])
+            _labels=np.array([thresh1])
+
+            print(_batch.shape)
+
+            # _temp=tf.one_hot(indices=tf.cast(_labels, tf.int32), depth=2)
+            #sess.run(logits, feed_dict={train_batch: _batch.astype(np.float32), labels: _labels})
+            softmax=sess.run(softmax,feed_dict={train_batch: _batch.astype(np.float32), labels: _labels})
+
+            argmax = tf.argmax(softmax, 3)
+            results=np.array(sess.run(argmax))
+            print(results)
+            print("softmax=", np.array(results).shape)
+
+            accuracy(results,_labels,filename)
 
         #accuracy()
 
