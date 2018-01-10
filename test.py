@@ -124,9 +124,9 @@ def test(load,ckpt_dir):
 
             # _temp=tf.one_hot(indices=tf.cast(_labels, tf.int32), depth=2)
             #sess.run(logits, feed_dict={train_batch: _batch.astype(np.float32), labels: _labels})
-            softmax=sess.run(softmax,feed_dict={train_batch: _batch.astype(np.float32), labels: _labels})
+            softmaxa=sess.run(softmax,feed_dict={train_batch: _batch.astype(np.float32), labels: _labels})
 
-            argmax = tf.argmax(softmax, 3)
+            argmax = tf.argmax(softmaxa, 3)
             results=np.array(sess.run(argmax))
             print(results)
             print("softmax=", np.array(results).shape)
