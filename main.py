@@ -82,7 +82,7 @@ with tf.Session(config=session_config) as sess:
 
         if i % 50 == 0:
             s = sess.run(mergedsummary, feed_dict={train_batch: _batch, labels: _labels})
-            writer.add_summary(s, start)
+            writer.add_summary(s, i)
             print("writing summary")
 
         writer.add_graph(sess.graph)
