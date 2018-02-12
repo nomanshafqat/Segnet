@@ -1,0 +1,11 @@
+**.DS_Store
+.DS_Store
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/workspace.xml
+*.pyc
+*.pyc
+__pycache__/dataset.cpython-36.pyc
+__pycache__/convnet.cpython-36.pyc
+summary/events.out.tfevents.1518441905.Nomans-MBP
+*.cpython-36.pyc
+.DS_Store

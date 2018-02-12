@@ -6,6 +6,72 @@ import tensorflow as tf
 import random
 from PIL import Image
 from skimage import morphology
+import xml.etree.ElementTree as ET
+
+def read_frame(filname, img_path="", ann_path=""):
+    img_path = os.path.join(img_path, filname)
+    ann_path = os.path.join(ann_path, filname[:-3] + "xml")
+
+    img = cv2.imread(img_path)
+
+    labels=np.zeros((np.array(img).shape[:-1]))
+
+    #print(labels)
+    # cv2.imshow("img",img)
+    # cv2.waitKey(0)
+    img=img/255
+
+    # actual parsing
+    in_file = open(ann_path)
+    tree = ET.parse(in_file)
+    root = tree.getroot()
+    jpg = str(root.find('filename').text)
+    imsize = root.find('size')
+    w = int(imsize.find('width').text)
+    h = int(imsize.find('height').text)
+    all = list()
+    dumps = list()
+
+    for obj in root.iter('object'):
+        current = list()
+        name = obj.find('name').text
+
+        xmlbox = obj.find('bndbox')
+        xn = int(float(xmlbox.find('xmin').text))
+        xx = int(float(xmlbox.find('xmax').text))
+        yn = int(float(xmlbox.find('ymin').text))
+        yx = int(float(xmlbox.find('ymax').text))
+        current = [name, xn, yn, xx, yx]
+        labels[yn+5:yx-5,xn+3:xx-3]=1
+        all += [current]
+
+    add = [[jpg, [w, h, all]]]
+    in_file.close()
+    # print(add)
+    return img, labels
+
+def fetch_data(batch_size, img_dir, ann_dir):
+    batch_labels = []
+    batch_img = []
+    filenames = os.listdir(img_dir)
+    while True:
+        random.shuffle(filenames)
+        for filename in filenames:
+
+            if not filename.__contains__("jpg"):
+                continue
+
+            print(filename, end=" ")
+            img, labels = read_frame(filename, img_dir, ann_dir)
+
+            batch_img.append(img)
+
+            if len(batch_img) == batch_size:
+                yield batch_img, batch_labels
+                batch_labels = []
+                batch_img = []
+
+
 def prepare_batch(img_dir, ground_truth_dir,batch_size):
 
     batch =parse(img_dir, ground_truth_dir, batch_size)
@@ -32,13 +98,18 @@ def parse(img_dir, ground_truth_dir,batch_size):
                 continue
             inputwidth=512
             path = os.path.join(img_dir, filename)
-            g = cv2.imread(path)
-            g = cv2.resize(g, (700, 700))
-            #g=cv2.divide(g,255)
-            groundtruthpath = os.path.join(ground_truth_dir, filename[:-4] + ".png")
 
-            gt = cv2.imread(groundtruthpath, 0)
-            gt = cv2.resize(gt, (700, 700))
+            img, gt = read_frame(filename, img_dir, ground_truth_dir)
+
+
+            img = cv2.resize(img, (512, 512))
+
+            gt = cv2.resize(gt, (512, 512))
+
+            '''
+            cv2.imshow("img",img)
+            cv2.imshow("gt",gt)
+            cv2.waitKey(0)
 
             ret, thresh1 = cv2.threshold(gt, 100, 255, cv2.THRESH_BINARY)
             #square=cv2.getStructuringElement(cv2.MORPH_RECT,(2,2))
@@ -62,20 +133,21 @@ def parse(img_dir, ground_truth_dir,batch_size):
             g=g[hoff:hoff+inputwidth,woff:woff+inputwidth,:]
             thresh1=thresh1[hoff:hoff+inputwidth,woff:woff+inputwidth]
             for angle in range(0,360,90):
-                g = Image.fromarray(g).rotate(angle)
-                thresh1 = Image.fromarray(thresh1).rotate(angle)
+                img = Image.fromarray(img).rotate(angle)
+                gt = Image.fromarray(gt).rotate(angle)
 
-                g = np.array(g)
-                thresh1 = np.array(thresh1)
+                g = np.array(img)
+                thresh1 = np.array(img)'''
 
-                dataset.append(g)
-                labels.append(thresh1)
-                print(filename[:2] , angle,end=" && ")
+            dataset.append(img)
+            labels.append(gt)
 
-                #cv2.imshow("g", g)
-                #cv2.imshow("gt", thresh1*255)
-                #cv2.waitKey(1000)
-                if(len(dataset)==batch_size):
-                    yield dataset,labels
-                    dataset=[]
-                    labels=[]
+            #cv2.imshow("g", g)
+            #cv2.imshow("gt", thresh1*255)
+            #cv2.waitKey(1000)
+            if(len(dataset)==batch_size):
+                #print(np.array(dataset).shape)
+
+                yield np.array(dataset),np.array(labels)
+                dataset=[]
+                labels=[]
