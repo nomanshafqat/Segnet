@@ -7,8 +7,8 @@ import sys
 import os
 
 batchsize = 2
-imgdir = "DS"
-groundtruth = "GT"
+imgdir = ""
+groundtruth_dir = ""
 total_steps = 1000000
 ckpt_dir = "ckpt/"
 ckpt_steps = 5000
@@ -28,10 +28,12 @@ gpu = float(sys.argv[3])
 lr = float(sys.argv[4])
 ckpt_steps = int(sys.argv[5])
 batchsize = int(sys.argv[6])
+imgdir=sys.argv[7]
+groundtruth_dir=sys.argv[8]
 
 assert (os.path.exists(ckpt_dir))
 assert (os.path.exists(imgdir))
-assert (os.path.exists(groundtruth))
+assert (os.path.exists(groundtruth_dir))
 
 # tensor_in=tf.constant(1.0,shape=[batchsize,224,224,1],dtype=tf.float32)
 segnet = SegNet(batchsize)
@@ -74,7 +76,7 @@ with tf.Session(config=session_config) as sess:
     for i in range(start, total_steps):
         # print(sess.run(batch))
 
-        _batch, _labels = prepare_batch(imgdir, groundtruth, batchsize)
+        _batch, _labels = prepare_batch(imgdir, groundtruth_dir, batchsize)
 
         # print(_batch.shape)
 
