@@ -1,4 +1,4 @@
-from model3 import SegNet
+from Model2 import SegNet
 from dataset import parse, prepare_batch
 import tensorflow as tf
 from loss import loss
