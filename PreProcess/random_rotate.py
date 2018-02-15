@@ -4,7 +4,7 @@ from PIL import Image
 import numpy as np
 def randomrotate(img,labels):
     angle=90*int(random.random()*4)
-    print(angle)
+    #print(angle)
     #cv2.imshow("asvwdas",img)
 
     cv2.rotate(img,angle)
