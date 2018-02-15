@@ -98,7 +98,7 @@ def parse(img_dir, ground_truth_dir, batch_size):
         random.shuffle(img)
         for filename in img:
 
-            if filename.__contains__("DS_Store"):
+            if not filename.__contains__("jpg"):
                 continue
             inputwidth = 512
 
