@@ -109,13 +109,13 @@ def parse(img_dir, ground_truth_dir, batch_size):
             img, gt = random_crop(img, gt)
             img, gt = randomrotate(img, gt)
             #print(img)
-            cv2.imshow("img1", img)
+            #cv2.imshow("img1", img)
             #print(img)
 
             img = intensity_change(img, 0.5, 1.5)
-            cv2.imshow("img", img)
-            cv2.imshow("gt", gt)
-            cv2.waitKey(5000)
+            #cv2.imshow("img", img)
+            #cv2.imshow("gt", gt)
+            #cv2.waitKey(5000)
             '''
             ret, thresh1 = cv2.threshold(gt, 100, 255, cv2.THRESH_BINARY)
             #square=cv2.getStructuringElement(cv2.MORPH_RECT,(2,2))
