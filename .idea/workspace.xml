@@ -2,186 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94888a07-2fdc-4cf6-9448-ed05de738896" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/01_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/02_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/03_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/04_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/05_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/06_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/07_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/08_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/09_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/10_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/11_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/12_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/13_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/14_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/15_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/16_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/17_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/18_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/19_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/20_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/21_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/22_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/23_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/24_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/25_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/26_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/27_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/28_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/29_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/30_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/31_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/32_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/33_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/34_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/35_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/36_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/37_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/38_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/39_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/40_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/Image_03R.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/Image_05L.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/Image_06R.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/Image_07R.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/Image_09R.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/Image_11R.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/Image_12R.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/im0004.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/im0081.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/im0139.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/im0163.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/im0236.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/im0240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DS/im0324.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DSV/Image_12L.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DSV/im0082.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/01_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/02_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/03_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/04_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/05_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/06_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/07_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/08_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/09_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/10_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/11_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/12_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/13_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/14_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/15_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/16_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/17_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/18_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/19_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/20_test.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/21_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/22_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/23_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/24_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/25_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/26_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/27_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/28_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/29_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/30_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/31_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/32_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/33_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/34_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/35_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/36_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/37_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/38_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/39_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/40_training.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/Image_03R.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/Image_05L.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/Image_06R.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/Image_07R.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/Image_09R.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/Image_11R.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/Image_12R.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/im0004.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/im0081.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/im0139.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/im0163.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/im0236.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/im0240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GT/im0324.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GTV/Image_12L.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GTV/im0082.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/Image_01L.png" afterPath="$PROJECT_DIR$/DS/Image_01L.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/Image_01R.png" afterPath="$PROJECT_DIR$/DS/Image_01R.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/Image_02L.png" afterPath="$PROJECT_DIR$/DS/Image_02L.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/Image_02R.png" afterPath="$PROJECT_DIR$/DS/Image_02R.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/Image_03L.png" afterPath="$PROJECT_DIR$/DS/Image_03L.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/Image_04L.png" afterPath="$PROJECT_DIR$/DS/Image_04L.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/Image_04R.png" afterPath="$PROJECT_DIR$/DS/Image_04R.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/Image_05R.png" afterPath="$PROJECT_DIR$/DS/Image_05R.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/Image_06L.png" afterPath="$PROJECT_DIR$/DS/Image_06L.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/Image_07L.png" afterPath="$PROJECT_DIR$/DS/Image_07L.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/Image_08L.png" afterPath="$PROJECT_DIR$/DS/Image_08L.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/Image_08R.png" afterPath="$PROJECT_DIR$/DS/Image_08R.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/Image_09L.png" afterPath="$PROJECT_DIR$/DS/Image_09L.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/Image_10L.png" afterPath="$PROJECT_DIR$/DS/Image_10L.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/Image_10R.png" afterPath="$PROJECT_DIR$/DS/Image_10R.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/Image_11L.png" afterPath="$PROJECT_DIR$/DS/Image_11L.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/Image_13L.png" afterPath="$PROJECT_DIR$/DS/Image_13L.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/Image_13R.png" afterPath="$PROJECT_DIR$/DS/Image_13R.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/Image_14L.png" afterPath="$PROJECT_DIR$/DS/Image_14L.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/Image_14R.png" afterPath="$PROJECT_DIR$/DS/Image_14R.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/im0001.png" afterPath="$PROJECT_DIR$/DS/im0001.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/im0002.png" afterPath="$PROJECT_DIR$/DS/im0002.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/im0003.png" afterPath="$PROJECT_DIR$/DS/im0003.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/im0005.png" afterPath="$PROJECT_DIR$/DS/im0005.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/im0044.png" afterPath="$PROJECT_DIR$/DS/im0044.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/im0077.png" afterPath="$PROJECT_DIR$/DS/im0077.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/im0162.png" afterPath="$PROJECT_DIR$/DS/im0162.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/im0235.png" afterPath="$PROJECT_DIR$/DS/im0235.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/im0239.png" afterPath="$PROJECT_DIR$/DS/im0239.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/im0255.png" afterPath="$PROJECT_DIR$/DS/im0255.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/im0291.png" afterPath="$PROJECT_DIR$/DS/im0291.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DS/im0319.png" afterPath="$PROJECT_DIR$/DS/im0319.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/Image_01L.png" afterPath="$PROJECT_DIR$/GT/Image_01L.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/Image_01R.png" afterPath="$PROJECT_DIR$/GT/Image_01R.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/Image_02L.png" afterPath="$PROJECT_DIR$/GT/Image_02L.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/Image_02R.png" afterPath="$PROJECT_DIR$/GT/Image_02R.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/Image_03L.png" afterPath="$PROJECT_DIR$/GT/Image_03L.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/Image_04L.png" afterPath="$PROJECT_DIR$/GT/Image_04L.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/Image_04R.png" afterPath="$PROJECT_DIR$/GT/Image_04R.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/Image_05R.png" afterPath="$PROJECT_DIR$/GT/Image_05R.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/Image_06L.png" afterPath="$PROJECT_DIR$/GT/Image_06L.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/Image_07L.png" afterPath="$PROJECT_DIR$/GT/Image_07L.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/Image_08L.png" afterPath="$PROJECT_DIR$/GT/Image_08L.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/Image_08R.png" afterPath="$PROJECT_DIR$/GT/Image_08R.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/Image_09L.png" afterPath="$PROJECT_DIR$/GT/Image_09L.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/Image_10L.png" afterPath="$PROJECT_DIR$/GT/Image_10L.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/Image_10R.png" afterPath="$PROJECT_DIR$/GT/Image_10R.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/Image_11L.png" afterPath="$PROJECT_DIR$/GT/Image_11L.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/Image_13L.png" afterPath="$PROJECT_DIR$/GT/Image_13L.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/Image_13R.png" afterPath="$PROJECT_DIR$/GT/Image_13R.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/Image_14L.png" afterPath="$PROJECT_DIR$/GT/Image_14L.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/Image_14R.png" afterPath="$PROJECT_DIR$/GT/Image_14R.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/im0001.png" afterPath="$PROJECT_DIR$/GT/im0001.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/im0002.png" afterPath="$PROJECT_DIR$/GT/im0002.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/im0003.png" afterPath="$PROJECT_DIR$/GT/im0003.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/im0005.png" afterPath="$PROJECT_DIR$/GT/im0005.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/im0044.png" afterPath="$PROJECT_DIR$/GT/im0044.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/im0077.png" afterPath="$PROJECT_DIR$/GT/im0077.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/im0162.png" afterPath="$PROJECT_DIR$/GT/im0162.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/im0235.png" afterPath="$PROJECT_DIR$/GT/im0235.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/im0239.png" afterPath="$PROJECT_DIR$/GT/im0239.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/im0255.png" afterPath="$PROJECT_DIR$/GT/im0255.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/im0291.png" afterPath="$PROJECT_DIR$/GT/im0291.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GT/im0319.png" afterPath="$PROJECT_DIR$/GT/im0319.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/original.png" afterPath="$PROJECT_DIR$/results/original.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/results/result.png" afterPath="$PROJECT_DIR$/results/result.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreProcess/random_Intensity.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreProcess/random_crop.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreProcess/random_resize.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PreProcess/random_rotate.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ckpt/checkpoint" afterPath="$PROJECT_DIR$/ckpt/checkpoint" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataset.py" afterPath="$PROJECT_DIR$/dataset.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -191,11 +17,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Segnet$dataset.coverage" NAME="dataset Coverage Results" MODIFIED="1515470451106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Segnet$dataset.coverage" NAME="dataset Coverage Results" MODIFIED="1518439868599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Segnet$Model.coverage" NAME="Model Coverage Results" MODIFIED="1515262026853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Segnet$sada.coverage" NAME="sada Coverage Results" MODIFIED="1515323224001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Segnet$preparedatasetchasedb.coverage" NAME="preparedatasetchasedb Coverage Results" MODIFIED="1515478674491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Segnet$main.coverage" NAME="main Coverage Results" MODIFIED="1515475728559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Segnet$main.coverage" NAME="main Coverage Results" MODIFIED="1518672650312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Segnet$random_rotate.coverage" NAME="random_rotate Coverage Results" MODIFIED="1518676255307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PreProcess" />
     <SUITE FILE_PATH="coverage/Segnet$test.coverage" NAME="test Coverage Results" MODIFIED="1515566876996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Segnet$preparedataset.coverage" NAME="preparedataset Coverage Results" MODIFIED="1515477772059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -204,19 +31,57 @@
       <file leaf-file-name="dataset.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="45" column="32" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="45" selection-end-column="32" />
+            <state relative-caret-position="234">
+              <caret line="126" column="14" lean-forward="false" selection-start-line="126" selection-start-column="13" selection-end-line="126" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="random_rotate.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PreProcess/random_rotate.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="random_resize.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PreProcess/random_resize.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="random_crop.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PreProcess/random_crop.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="137" column="0" lean-forward="true" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="-99">
+              <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -224,8 +89,44 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="81" column="21" lean-forward="true" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
+            <state relative-caret-position="255">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="random_Intensity.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PreProcess/random_Intensity.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sada.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sada.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loss.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/loss.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -234,11 +135,9 @@
       <file leaf-file-name="model3.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-              <folding>
-                <element signature="e#2423#2655#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="165">
+              <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -268,16 +167,21 @@
       <list>
         <option value="$PROJECT_DIR$/GT/test.py" />
         <option value="$PROJECT_DIR$/sada.py" />
-        <option value="$PROJECT_DIR$/loss.py" />
         <option value="$PROJECT_DIR$/Model.py" />
         <option value="$PROJECT_DIR$/Model2.py" />
-        <option value="$PROJECT_DIR$/convnet.py" />
         <option value="$PROJECT_DIR$/model3.py" />
         <option value="$PROJECT_DIR$/preparedataset.py" />
         <option value="$PROJECT_DIR$/preparedatasetchasedb.py" />
-        <option value="$PROJECT_DIR$/dataset.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/convnet.py" />
+        <option value="$PROJECT_DIR$/summary/events.out.tfevents.1518441457.Nomans-MBP" />
+        <option value="$PROJECT_DIR$/loss.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/PreProcess/random_crop.py" />
+        <option value="$PROJECT_DIR$/PreProcess/random_Intensity.py" />
+        <option value="$PROJECT_DIR$/dataset.py" />
+        <option value="$PROJECT_DIR$/PreProcess/random_rotate.py" />
+        <option value="$PROJECT_DIR$/PreProcess/random_resize.py" />
       </list>
     </option>
   </component>
@@ -350,7 +254,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.random_rotate">
     <configuration name="dataset" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -387,24 +291,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="preparedataset" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Segnet" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/preparedatasethoover.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <configuration name="preparedatasetchasedb" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -419,6 +305,24 @@
       <module name="Segnet" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/preparedatasetchasedb.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="random_rotate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PreProcess" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Segnet" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PreProcess/random_rotate.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -445,16 +349,16 @@
       <item index="0" class="java.lang.String" itemvalue="Python.test" />
       <item index="1" class="java.lang.String" itemvalue="Python.dataset" />
       <item index="2" class="java.lang.String" itemvalue="Python.main" />
-      <item index="3" class="java.lang.String" itemvalue="Python.preparedataset" />
-      <item index="4" class="java.lang.String" itemvalue="Python.preparedatasetchasedb" />
+      <item index="3" class="java.lang.String" itemvalue="Python.preparedatasetchasedb" />
+      <item index="4" class="java.lang.String" itemvalue="Python.random_rotate" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.test" />
-        <item index="1" class="java.lang.String" itemvalue="Python.preparedatasetchasedb" />
-        <item index="2" class="java.lang.String" itemvalue="Python.preparedataset" />
-        <item index="3" class="java.lang.String" itemvalue="Python.main" />
-        <item index="4" class="java.lang.String" itemvalue="Python.dataset" />
+        <item index="0" class="java.lang.String" itemvalue="Python.random_rotate" />
+        <item index="1" class="java.lang.String" itemvalue="Python.main" />
+        <item index="2" class="java.lang.String" itemvalue="Python.dataset" />
+        <item index="3" class="java.lang.String" itemvalue="Python.test" />
+        <item index="4" class="java.lang.String" itemvalue="Python.preparedatasetchasedb" />
       </list>
     </recent_temporary>
   </component>
@@ -482,19 +386,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28040057" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32188842" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36638454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36638454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51753324" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39903265" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41354293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39903265" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -513,270 +416,454 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.6/site-packages/tensorflow/python/ops/nn_ops.py">
+    <entry file="file://$PROJECT_DIR$/PreProcess/random_resize.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="1874" column="0" lean-forward="false" selection-start-line="1874" selection-start-column="0" selection-end-line="1874" selection-end-column="0" />
+        <state relative-caret-position="165">
+          <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PreProcess/random_crop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.6/site-packages/tensorflow/python/client/session.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="270" column="0" lean-forward="false" selection-start-line="270" selection-start-column="0" selection-end-line="270" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DT/11_manual2.jpg_3.png" />
-    <entry file="file://$PROJECT_DIR$/DT/11_manual2.jpg_6.png" />
-    <entry file="file://$PROJECT_DIR$/GT/01.png" />
-    <entry file="file://$PROJECT_DIR$/GT/02_test.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/original.png" />
-    <entry file="file://$PROJECT_DIR$/result.png" />
-    <entry file="file://$PROJECT_DIR$/results/original2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/result1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/result2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.ppm">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GTV/01_test.png" />
-    <entry file="file://$PROJECT_DIR$/GTV/08_test.png" />
-    <entry file="file://$PROJECT_DIR$/results/result.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/original1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/original.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sada.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loss.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="76" column="37" lean-forward="false" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/convnet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="93" lean-forward="false" selection-start-line="29" selection-start-column="93" selection-end-line="29" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/preparedatasetchasedb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/preparedatasethoover.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DS/27_training.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GT/05_test.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GT/28_training.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GT/35_training.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GT/40_training.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GT/38_training.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GT/im0044.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GT/im0235.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GT/im0255.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GT/Image_01L.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GT/Image_02R.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GT/Image_04L.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GT/Image_11L.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GT/Image_12R.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GT/Image_13L.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GT/Image_11R.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GT/Image_13R.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GT/Image_14R.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GT/Image_09L.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GT/Image_08L.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GT/Image_06L.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="45" column="32" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="45" selection-end-column="32" />
+        <state relative-caret-position="870">
+          <caret line="58" column="15" lean-forward="false" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/results/re_Image_12L.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/results/gt_Image_12L.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="81" column="21" lean-forward="true" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
+        <state relative-caret-position="105">
+          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sada.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+        <state relative-caret-position="165">
+          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="56" column="40" lean-forward="true" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
           <folding>
-            <element signature="e#2423#2655#0" expanded="false" />
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PreProcess/random_resize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/convnet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="58" column="15" lean-forward="true" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sada.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PreProcess/random_crop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2220">
+          <caret line="148" column="17" lean-forward="false" selection-start-line="148" selection-start-column="17" selection-end-line="148" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/convnet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="24" lean-forward="false" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sada.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="137" column="0" lean-forward="true" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+        <state relative-caret-position="1020">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="42" lean-forward="false" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="45" column="32" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="45" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1950">
+          <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="81" column="21" lean-forward="false" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/convnet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.ppm" />
+    <entry file="file://$PROJECT_DIR$/summary/events.out.tfevents.1518441457.Nomans-MBP" />
+    <entry file="file://$PROJECT_DIR$/convnet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="58" column="15" lean-forward="false" selection-start-line="58" selection-start-column="15" selection-end-line="58" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sada.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loss.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-99">
+          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="126" column="14" lean-forward="false" selection-start-line="126" selection-start-column="13" selection-end-line="126" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PreProcess/random_Intensity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PreProcess/random_crop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PreProcess/random_rotate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PreProcess/random_resize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
