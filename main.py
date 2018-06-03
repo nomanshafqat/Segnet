@@ -1,5 +1,5 @@
 from Augmentation import augment
-from model3 import SegNet
+from Model2 import SegNet
 from Data_handler import Datahandler_COCO
 import tensorflow as tf
 from loss import loss
