@@ -97,6 +97,15 @@ class SegNet:
             deconv_12 = self.deconv(unpool6, [32, 32], 'deconv1_2')
             deconv_13 = self.deconv(deconv_12, [2, 32], 'deconv1_1')
 
+        with tf.variable_scope("softmax"):
+            pred = tf.argmax(tf.nn.softmax(deconv_13), axis=-1)
+            pred = tf.expand_dims(pred, axis=-1)
+
+            tf.summary.image("pred", tf.multiply(tf.constant(255, dtype=tf.uint8), tf.cast(pred, tf.uint8)))
+
+            print(pred.get_shape())
+
+        print(deconv_13.get_shape())
         # rgb_image = classifier.rgb(deconv13)
         # tf.summary.image('output', rgb_image, max_outputs=self.max_images)
         return deconv_13

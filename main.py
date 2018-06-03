@@ -1,5 +1,6 @@
-from Model2 import SegNet
-from dataset import parse, prepare_batch
+from Augmentation import augment
+from model3 import SegNet
+from Data_handler import Datahandler_COCO
 import tensorflow as tf
 from loss import loss
 import numpy as np
@@ -10,7 +11,7 @@ batchsize = 2
 imgdir = ""
 groundtruth_dir = ""
 total_steps = 1000000
-ckpt_dir = "ckpt/"
+ckpt_dir = "c mainkpt/"
 ckpt_steps = 5000
 load = -1
 gpu = 0.5
@@ -28,8 +29,8 @@ gpu = float(sys.argv[3])
 lr = float(sys.argv[4])
 ckpt_steps = int(sys.argv[5])
 batchsize = int(sys.argv[6])
-imgdir=sys.argv[7]
-groundtruth_dir=sys.argv[8]
+imgdir = sys.argv[7]
+groundtruth_dir = sys.argv[8]
 
 assert (os.path.exists(ckpt_dir))
 assert (os.path.exists(imgdir))
@@ -37,12 +38,16 @@ assert (os.path.exists(groundtruth_dir))
 
 # tensor_in=tf.constant(1.0,shape=[batchsize,224,224,1],dtype=tf.float32)
 segnet = SegNet(batchsize)
+data_gen = Datahandler_COCO(imgdir, groundtruth_dir)
 
 gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=gpu)
 session_config = tf.ConfigProto(allow_soft_placement=True, gpu_options=gpu_options)
 
-train_batch = tf.placeholder(dtype=tf.float32, shape=[batchsize, 512, 512, 3])
-labels = tf.placeholder(dtype=tf.int32, shape=[batchsize, 512, 512])
+train_batch_plc = tf.placeholder(dtype=tf.float32, shape=[batchsize, 320, 320, 3])
+labels_plc = tf.placeholder(dtype=tf.int32, shape=[batchsize, 320, 320,1])
+
+train_batch, labels = augment(train_batch_plc, labels_plc,
+                                    horizontal_flip=True, rotate=15, crop_probability=0.8, mixup=4)
 
 print(train_batch.get_shape().as_list())
 with tf.variable_scope("One-Hot-Labels"):
@@ -68,6 +73,8 @@ saver = tf.train.Saver()
 with tf.Session(config=session_config) as sess:
     sess.run(init)
     start = 0
+    getbatch = data_gen.make_batches(batchsize)
+
     if load > 0:
         print("Restoring", load, ".ckpt.....")
         saver.restore(sess, os.path.join(ckpt_dir, str(load)))
@@ -76,14 +83,13 @@ with tf.Session(config=session_config) as sess:
     for i in range(start, total_steps):
         # print(sess.run(batch))
 
-        _batch, _labels = prepare_batch(imgdir, groundtruth_dir, batchsize)
-
+        _batch, _labels = next(getbatch)
         # print(_batch.shape)
 
-        _, loss = sess.run([train_step, loss_op], feed_dict={train_batch: _batch, labels: _labels})
+        _, loss = sess.run([train_step, loss_op], feed_dict={train_batch_plc: _batch, labels_plc: _labels})
 
-        if i % 50 == 0:
-            s = sess.run(mergedsummary, feed_dict={train_batch: _batch, labels: _labels})
+        if i % 500 == 0:
+            s = sess.run(mergedsummary, feed_dict={train_batch_plc: _batch, labels_plc: _labels})
             writer.add_summary(s, i)
             print("writing summary")
 
