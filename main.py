@@ -72,6 +72,7 @@ saver = tf.train.Saver()
 
 with tf.Session(config=session_config) as sess:
     sess.run(init)
+
     start = 0
     getbatch = data_gen.make_batches(batchsize)
 
@@ -79,6 +80,7 @@ with tf.Session(config=session_config) as sess:
         print("Restoring", load, ".ckpt.....")
         saver.restore(sess, os.path.join(ckpt_dir, str(load)))
         start = load
+    writer.add_graph(sess.graph)
 
     for i in range(start, total_steps):
         # print(sess.run(batch))
@@ -93,7 +95,6 @@ with tf.Session(config=session_config) as sess:
             writer.add_summary(s, i)
             print("writing summary")
 
-        writer.add_graph(sess.graph)
 
         print("step", i, "Loss=", loss)
 
