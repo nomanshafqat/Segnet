@@ -29,7 +29,7 @@ class SegNet:
         return cnn.conv(resized, [3, 3], channels_shape, 1, name, repad=True)
 
     def inference(self, images):
-        tf.summary.image('input', images, max_outputs=self.max_images)
+        #tf.summary.image('input', images, max_outputs=self.max_images)
 
         with tf.variable_scope('pool1'):
             conv1 = self.conv(images, [3, 64], 'conv1_1')

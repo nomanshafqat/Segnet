@@ -7,10 +7,7 @@ import random
 from PIL import Image
 from skimage import morphology
 import xml.etree.ElementTree as ET
-from PreProcess.random_crop import random_crop
-from PreProcess.random_resize import random_resize
-from PreProcess.random_Intensity import intensity_change
-from PreProcess.random_rotate import randomrotate
+
 
 def read_frame(filname, img_path="", ann_path=""):
     img_path = os.path.join(img_path, filname)
