@@ -12,3 +12,5 @@ summary/events.out.tfevents.1518441905.Nomans-MBP
 *.local
 *.Nomans-MBP
 *.pyc
+*.jpg
+*.DS_Store
